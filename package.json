@@ -1,0 +1,18 @@
+{
+  "name": "aem-i18n-convert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aem-i18n-convert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jay Proulx <jay@proulx.info>",
+  "license": "ISC",
+  "bin": {
+    "aem-i18n-convert": "aem-i18n-convert.js"
+  },
+  "dependencies": {
+    "mustache": "^3.0.1",
+    "yargs": "^12.0.5"
+  }
+}
