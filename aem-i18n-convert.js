@@ -9,6 +9,7 @@ const yargs = require('yargs')
         .alias('H', 'help')
         .describe('help', 'Print usage and quit.')
         .alias('i', 'input')
+        .require('input')
         .describe('input', 'i18n json format file'),
     argv = yargs.argv;
 
