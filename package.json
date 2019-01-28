@@ -4,7 +4,9 @@
   "description": "",
   "main": "aem-i18n-convert.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "generate-release --release-type patch --no-confirm && npm publish",
+    "release": "generate-release --release-type minor --no-confirm && npm publish"
   },
   "author": "Jay Proulx <jay@proulx.info>",
   "license": "ISC",
