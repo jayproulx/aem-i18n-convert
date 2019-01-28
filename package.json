@@ -1,6 +1,6 @@
 {
   "name": "aem-i18n-convert",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "aem-i18n-convert.js",
   "scripts": {
