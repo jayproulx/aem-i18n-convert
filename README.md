@@ -23,3 +23,8 @@ Keys are automatically sorted alphabetically to make hand merging easier if nece
       --version    Show version number                                     [boolean]
       -H, --help   Print usage and quit.                                   [boolean]
       -i, --input  i18n json format file
+
+**Example**
+
+    # npm install -g aem-i18n-convert
+    # aem-i18n-convert --input /path/to/en_us.json > /path/to/apps/project/i18n/mydictionary/en_us.xml
