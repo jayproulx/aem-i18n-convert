@@ -65,8 +65,10 @@ function createValidName(title) {
     return name;
 }
 
-var messagesTemplate = fs.readFileSync("messages.mustache", "utf8");
-var messageTemplate = fs.readFileSync("message.mustache", "utf8");
+var currentFolder = path.dirname(__filename);
+
+var messagesTemplate = fs.readFileSync(currentFolder + "/messages.mustache", "utf8");
+var messageTemplate = fs.readFileSync(currentFolder + "/message.mustache", "utf8");
 
 var i18n = Object.entries(require(argv.input)).map(([key, value]) => ({key,value})).sort(sortKey);
 
