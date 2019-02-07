@@ -70,7 +70,13 @@ var currentFolder = path.dirname(__filename);
 var messagesTemplate = fs.readFileSync(currentFolder + "/messages.mustache", "utf8");
 var messageTemplate = fs.readFileSync(currentFolder + "/message.mustache", "utf8");
 
-var i18n = Object.entries(require(argv.input)).map(([key, value]) => ({key,value})).sort(sortKey);
+var pathToInput = argv.input;
+
+if(!argv.input.startsWith("/") && !argv.input.startsWith("~")) {
+    pathToInput = process.cwd() + "/" + argv.input;
+}
+
+var i18n = Object.entries(require(pathToInput)).map(([key, value]) => ({key,value})).sort(sortKey);
 
 /**
  * Convert existing keys into
